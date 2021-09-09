@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+.nav-item:not(:last-child) {
+    margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Home Page */
+.home-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-section .background {
+    background: url("./img/home-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.home-section .text {
+    background-color: #fff;
+    color: #000;
+    z-index: 99;
+    text-align: center;
+    padding: 35px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgb(0 0 0 / 20%);
+    transition: all .3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-section .text:hover {
+    transform: scale(1.1);
+}
+
+.home-section .text h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* All Customers section */
+.customers-view-section, .transactions-view-section {
+    padding: 150px 50px 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: #8e8e8e;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: orangered;
 }
