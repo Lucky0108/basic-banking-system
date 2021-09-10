@@ -5,12 +5,12 @@
 
 <hr>
 To Run this locally do the following:
-  - Clone the Repo
-  - Open Terminal and Run Following Commands:
-  - npm install
-  - npm run server (For Backend Only)
-  - npm run client (For Frontend Only)
-  - npm run server (To run both Frontend and Backend concurrently)
+  * Clone the Repo
+  * Open Terminal and Run Following Commands:
+  * npm install
+  * npm run server (For Backend Only)
+  * npm run client (For Frontend Only)
+  * npm run server (To run both Frontend and Backend concurrently)
  
  Create a .env file in root folder and add your MongoDB details there as MONGO_DB_USER, MONGO_DB_PASSWORD and DB_NAME.
 
