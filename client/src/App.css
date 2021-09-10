@@ -40,7 +40,6 @@ input[type=number] {
     background: url("./img/home-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
     position: absolute;
     top: 0;
     width: 100%;
